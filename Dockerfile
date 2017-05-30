@@ -8,7 +8,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
     apt-get -y install wget mongodb-server jsvc binutils && \
     wget -O /tmp/unifi_sysvinit_all.deb \
-	https://www.ubnt.com/downloads/unifi/5.4.16-96a125e406/unifi_sysvinit_all.deb && \
+	https://www.ubnt.com/downloads/unifi/5.4.17-426d275ce8/unifi_sysvinit_all.deb && \
     dpkg --install /tmp/unifi_sysvinit_all.deb && \
     rm -rf /tmp/unifi_sysvinit_all.deb /var/lib/unifi/*
 
